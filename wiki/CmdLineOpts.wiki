@@ -1,0 +1,42 @@
+#summary Perform clustering autonomously without GUI interaction. Useful for scripting.
+
+=General Options=
+
+        -f <filename>                   Load <filename> for clustering.  Default Parser: Normal
+        -p <parser>                     Parse <filename> with <parser>.  Only valid with the -f option.  E.g. 'Normal'
+        -d                              Don't init display, run from console. This happens automatically if there is no
+                                        display or the required libraries are unavailable.
+
+=Data Normalisation=
+
+        --log2, --nolog2                Perform log2 reexpression, or turn it off. Default is off.
+        --submedians, --nosubmedians    Perform median centring, or turn it off. Default is off.
+                                        NOTE: Turning this on will turn off mean centring.
+        --center, --nocenter            Perform mean centring, or turn it off. Default is on.
+                                        NOTE: Turning this on will turn off median centring.
+        --scale, --noscale              Perform RMS scaling, or turn it off. Default is off.
+        --normvar, --nonormvar          Normalise variance to 1 for each subsample, or turn it off. Default is off.
+
+=PCA and Feature Selection=
+
+        --nopca                         Do not perform PCA at all. This precludes feature selection.
+                                        Useful if your data is known to be singular.
+        --pcafraction <fraction>        Select features from the top <fraction> principle components. Default is 0.85
+        --eigweight <fraction>          Select the top <fraction> features by weight in each principle component.
+                                        Default is 0.25
+        --noselection                   Do not perform feature selection. Simply sets pcafraction and eigweight to 1.
+
+=Sample Selection=
+
+        -c <file1 file2 file3 ..>       Define samples (one on each line) in file1, etc as clusters.  Sample set will be
+                                        reduced to these samples, and their labels will be shown in logs and PCA plot.
+        --krange <fst> <snd>            Repeat for each kvalue between <fst> and <snd> inclusive. Default is 2 to 6.
+        --subsamples  <fraction>        Number of clustering iterations to perform. Default is 300.
+        --subfraction <fraction>        Select a random <fraction> of the samples each iteration. Default is 0.80
+        -h, --help                      Print help and exit.
+
+=Example=
+
+        python common.py -f mydata.txt -d --log2 --submedians --noselection -c clusterdefs/*
+
+        Opens mydata.txt, log2 reexpresses and median centres the data, performs no feature selection, and begin clustering using the cluster definitions in the clusterdefs folder without using the GUI.
