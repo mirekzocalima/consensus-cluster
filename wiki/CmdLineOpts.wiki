@@ -65,6 +65,6 @@
 
 =Example=
 
-        python common.py -f mydata.txt -d --log2 --submedians --noselection -c clusterdefs/`*`
+        python common.py -f mydata.txt -d --kmeans --log2 --submedians --noselection -c clusterdefs/`*`
 
-        Opens mydata.txt, log2 reexpresses and median centres the data, performs no feature selection, and begin clustering using the cluster definitions in the clusterdefs folder without using the GUI.
+        Opens mydata.txt, log2 reexpresses and median centres the data, performs no feature selection, and begin k-means clustering using the cluster definitions in the clusterdefs folder without using the GUI.
