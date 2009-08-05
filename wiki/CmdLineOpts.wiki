@@ -48,6 +48,21 @@
 *-h*, *--help*
   Print help and exit.
 
+=Clustering Options=
+
+*--kmeans*
+  Run the K-Means algorithm
+*--som*
+  Run the Self-Organising Map algorithm
+*--pam*
+  Run the Partition Around Medoids algorithm
+*--hier*
+  Run the Hierarchical Clustering algorithm. Note that this option adds the Hierarchical algorithm to clustering iterations, rather than the 'final' consensus clustering.
+*--euclid*
+  Cluster using the Euclidean distance metric
+*--corr*
+  Cluster using the Pearson Correlation distance metric
+
 =Example=
 
         python common.py -f mydata.txt -d --log2 --submedians --noselection -c clusterdefs/`*`
