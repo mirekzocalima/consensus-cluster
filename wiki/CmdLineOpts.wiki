@@ -8,6 +8,8 @@
   Parse _filename_ with _parser_.  Only valid with the *-f* option.  E.g. 'Normal'
 *-d*
     Don't init display, run from console. This happens automatically if there is no display or the required libraries are unavailable.
+*-h*, *--help*
+  Print help and exit.
 
 =Data Normalisation=
 
@@ -45,8 +47,6 @@
   Number of clustering iterations to perform. Default is 300.
 *--subfraction* _fraction_
   Select a random _fraction_ of the samples each iteration. Default is 0.80
-*-h*, *--help*
-  Print help and exit.
 
 =Clustering Options=
 
