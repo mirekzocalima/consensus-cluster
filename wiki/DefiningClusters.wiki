@@ -17,7 +17,7 @@ For example, say in one clustering run we have the following clusters after one 
 and we want to discover their whereabouts in the next clustering run. To do this, we do the following:
   * Create two text files, cluster1.txt and cluster2.txt
   * Put in each file the contents of the cluster by sample id, one sample id per line
-  * Click define clusters and *select BOTH files* (hold ctrl to select multiple files) or use the -c option on the command line, e.g. -c cluster*.txt
+  * Click define clusters and *select BOTH files* (hold ctrl to select multiple files) or use the -c option on the command line, e.g. -c cluster`*`.txt
   * Begin clustering
 
 ===IMPORTANT NOTE===
