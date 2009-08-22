@@ -26,7 +26,7 @@
   * Hierarchical: Hierarchical clustering.  Will attempt to perform clustering with Single, Complete, and/or Average linkage depending on those settings.  Not recommended except for _exceptionally_ clean data.
   * Cluster Consensus Using: Once a consensus matrix is made, this is clustered to deliver the "final" clusters.  It is HIGHLY recommended that Hierarchical is used, because this will allow ConsensusCluster to produce a dendrogram of its clustering.
 
-  * Distance Metric: Unimplemented...
+  * Distance Metric: Euclidean and Pearson Correlation metrics are provided.
 
 ==Misc==
 
