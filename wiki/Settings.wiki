@@ -30,4 +30,4 @@
 
 ==Misc==
 
-  * Set Variance to 1: Standardise the variance of each feature to be 1 over all samples each clustering iteration.  Only recommended for crude combination of multiple datasets, virtually any other method is better.
+  * Set Variance to 1: Standardise the variance of each feature to be 1 over all samples each clustering iteration.  This is NOT recommended for microarray data, though other data sources with features that can dominate clustering due to differing scales may benefit from this (try "scale" first). Can be used for crude combination of multiple datasets, though virtually any other method is better.
