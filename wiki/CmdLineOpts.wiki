@@ -62,6 +62,8 @@
   Cluster using the Euclidean distance metric. Default.
 *--corr*
   Cluster using the Pearson Correlation distance metric
+*--coring*
+  Turns on EXPERIMENTAL coring support. Additional logfiles and images are generated which detail suggested 'core' clusters. Take its advice at your own risk!
 
 =Example=
 
