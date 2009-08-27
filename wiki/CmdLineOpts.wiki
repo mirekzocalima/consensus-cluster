@@ -59,7 +59,7 @@
 *--hier*
   Run the Hierarchical Clustering algorithm. Note that this option adds the Hierarchical algorithm to clustering iterations, rather than the 'final' consensus clustering.
 *--euclid*
-  Cluster using the Euclidean distance metric
+  Cluster using the Euclidean distance metric. Default.
 *--corr*
   Cluster using the Pearson Correlation distance metric
 
